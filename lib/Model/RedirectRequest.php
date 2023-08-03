@@ -194,7 +194,7 @@ class RedirectRequest implements ModelInterface, ArrayAccess
     public function getMethodAllowableValues()
     {
         return [
-            self::METHOD_GET
+            self::METHOD_GET,
             self::METHOD_POST
         ];
     }
