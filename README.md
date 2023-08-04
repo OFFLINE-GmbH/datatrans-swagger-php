@@ -50,9 +50,11 @@ exit;
 ### Manually settle a transaction
 
 ```php
+$transactionId = 'your-transaction-id-from-above';
+
 $api->settle(new \Swagger\Client\Model\InitRequest([
   'currency' => 'CHF',
   'refno' => 'some-unique-string',
   'amount' => 1000, // 10.00 CHF
-]));
+], $transactionId));
 ```
