@@ -34,9 +34,9 @@ $response = $api->init(new \Swagger\Client\Model\InitRequest([
   'refno' => 'some-unique-string',
   'amount' => 1000, // 10.00 CHF
   'redirect' => [
-    'successUrl' => 'https://example.com/success'),
-    'cancelUrl' => 'https://example.com/cancelled'),
-    'errorUrl' => 'https://example.com/error'),
+    'successUrl' => 'https://example.com/success',
+    'cancelUrl' => 'https://example.com/cancelled',
+    'errorUrl' => 'https://example.com/error',
   ],
 ]));
 
