@@ -27,7 +27,6 @@ $api =  new \Swagger\Client\Api\V1transactionsApi(
 ### Initialize a Transaction
 
 ```php
-// Init the Transaction.
 $response = $api->init(new \Swagger\Client\Model\InitRequest([
   'auto_settle' => true, // Set to false to manually settle (see below).
   'language' => 'en',
